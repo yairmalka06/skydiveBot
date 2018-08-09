@@ -12,14 +12,14 @@ const fs = require("fs");
 
 const ms = require("ms");
 
-const TOKEN = "NDY4ODA1MTY0NTI2OTkzNDE4.DjDBtg.PS7-6wSadb_4Y70W23jNg3j6r7M";
-
 const PREFIX = "!";
 
 /* global Map*/
 const active = new Map();
 
 const fortnite = require('fortnite');
+
+var ownerID = "279353707567644693";
 
 var bot = new Discord.Client();
 
@@ -52,7 +52,7 @@ jsfile.forEach((f, i) =>{
           .addField("מתי הצטרף ?",member.joinedAt)
           .setThumbnail(mem.displayAvatarURL)
         member.guild.channels.find("id","468770176490274836").sendMessage(embed);
-        let Role = member.guild.roles.find("name", "☄️| SKYDIVERS");
+        let Role = member.guild.roles.find("name", "☄️SkyDivers☄️");
          member.addRole(Role);
          bot.guilds.forEach(g =>{
           size = g.memberCount
@@ -137,5 +137,3 @@ bot.on("message", function(message){
 
         });
 bot.login(process.env.TOKEN);
-
-           
