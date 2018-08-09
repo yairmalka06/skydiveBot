@@ -136,6 +136,6 @@ bot.on("message", function(message){
     console.log(`${message.author.tag} a utilisé la commande ${cmd}`);}
 
         });
-bot.login(TOKEN);
+bot.login(process.env.TOKEN);
 
            
