@@ -54,7 +54,7 @@ jsfile.forEach((f, i) =>{
           .addField("מתי הצטרף ?",member.joinedAt)
           .setThumbnail(mem.displayAvatarURL)
         member.guild.channels.find("id","468770176490274836").sendMessage(embed);
-        let Role = member.guild.roles.find("name", "☄️SkyDivers☄️");
+        let Role = member.guild.roles.find("name", "☄️| SKYDIVERS");
          member.addRole(Role);
          bot.guilds.forEach(g =>{
           size = g.memberCount
