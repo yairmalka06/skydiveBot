@@ -28,7 +28,7 @@ var ownerID = "279353707567644693"
 
 let xp = require("./xp.json");
 
-fs.readdir("./commands/", (err, files) => {
+fs.readdir("./Commands/", (err, files) => {
 
 if(err) console.log(err);
 let jsfile = files.filter(f => f.split(".").pop() === "js");
